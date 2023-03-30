@@ -8,7 +8,7 @@
 #include "package-def.h"
 #include "../utils/stringid.h"
 #include "../pak-entries/geometry1.h"
-
+#include "../pak-entries/spawner-group.h"
 
 #include <immintrin.h>
 #include <stdio.h>
@@ -290,6 +290,12 @@ bool Login(ResItem* pResItem, ResPage* pResPage, Package* pPackage)
 			break;
 		}
 
+		case 0x460F497540A29F73:
+		{
+			EntitySpawnerGroup::DumpInfo(reinterpret_cast<uint8_t*>(pResItem) + 0x30);
+			break;
+		}
+
 		default:
 		{
 			printf("Found #%.16llX -> %s\n", typeId, ResolverPakItemName(typeId));
@@ -341,6 +347,21 @@ const char* ResolverPakItemName(StringId64 itemId)
 		case SID("GEOMETRY_1"):
 		{
 			return "GEOMETRY_1";
+		}
+
+		case SID("LEVEL_INFO_3"):
+		{
+			return "LEVEL_INFO_3";
+		}
+
+		case SID("SPLINE_TABLE"):
+		{
+			return "SPLINE_TABLE";
+		}
+
+		case SID("REGION_TREE"):
+		{
+			return "REGION_TREE";
 		}
 
 		default:

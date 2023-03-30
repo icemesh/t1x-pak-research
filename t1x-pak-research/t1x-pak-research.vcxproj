@@ -81,6 +81,7 @@
     <ClInclude Include="src\loading-heap\loadingheap.h" />
     <ClInclude Include="src\package\package-def.h" />
     <ClInclude Include="src\package\package.h" />
+    <ClInclude Include="src\pak-entries\spawner-group.h" />
     <ClInclude Include="src\pak-entries\geometry1.h" />
     <ClInclude Include="src\sidbase\sidbase.h" />
     <ClInclude Include="src\utils\stringid.h" />
@@ -90,6 +91,7 @@
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\package\package.cpp" />
     <ClCompile Include="src\pak-entries\geometry1.cpp" />
+    <ClCompile Include="src\pak-entries\spawner-group.cpp" />
     <ClCompile Include="src\sidbase\sidbase.cpp" />
     <ClCompile Include="src\utils\utils.cpp" />
   </ItemGroup>
