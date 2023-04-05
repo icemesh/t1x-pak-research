@@ -63,7 +63,7 @@ struct ResPageEntry //0x10
 //ok
 struct ResItem //0x30
 {
-	void* m_unkPtr;								//0x0 
+	const char* m_name;								//0x0 field used by the motion match set
 	uint64_t m_unused;							//0x8 always 0x0001234500012345
 	uint32_t m_pageSize;						//0x10 size from the end of the PakPageHeader
 	uint32_t m_unused2;							//0x14 0x00012345

@@ -81,6 +81,7 @@
     <ClInclude Include="src\loading-heap\loadingheap.h" />
     <ClInclude Include="src\package\package-def.h" />
     <ClInclude Include="src\package\package.h" />
+    <ClInclude Include="src\pak-entries\regiontree.h" />
     <ClInclude Include="src\pak-entries\spawner-group.h" />
     <ClInclude Include="src\pak-entries\geometry1.h" />
     <ClInclude Include="src\sidbase\sidbase.h" />

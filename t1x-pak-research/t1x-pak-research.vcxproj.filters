@@ -39,6 +39,9 @@
     <ClInclude Include="src\pak-entries\spawner-group.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\pak-entries\regiontree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\package\package.cpp">
