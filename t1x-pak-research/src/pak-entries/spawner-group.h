@@ -43,14 +43,17 @@ namespace EntitySpawnerGroup
 		float				m_unkFloat2;		///< <c>0x24</c>: always 1.0 ?
 		float				m_unkFloat3;		///< <c>0x28</c>: always 1.0 ?
 		float				m_unkFloat4;		///< <c>0x2C</c>: always 0 ?
-		void*				m_unkPtr;			///< <c>0x30</c>: 
+		const char*			m_EntityName;		///< <c>0x30</c>: entity name
 		uint64_t			m_spawnerdId;		///< <c>0x38</c>: StringId64 of the spawnerName;
 		uint8_t				m_unk[0x10];		///< <c>0x40</c>: 
 		const char*			m_spawnerName;		///< <c>0x50</c>: spawner name
 		uint8_t				m_unk2[0x18];		///< <c>0x58</c>: 
 		StringId64			m_processType;		///< <c>0x70</c>: StringId of the process type
 		const char*			m_artGroup;			///< <c>0x78</c>: art group name
-		uint32_t			m_spawnerFlags;		///< <c>0x80</c>: spawner flags
+		uint8_t				m_birthFlags;		///< <c>0x80</c>
+		uint8_t				m_autoSpawnOnce;		///< <c>0x81</c>
+		uint8_t				m_spawnerFlagsUnk1;		///< <c>0x82</c>
+		uint8_t				m_killRequested;		///< <c>0x83</c>
 		uint32_t			m_pad;				///< <c>0x84</c>: padding probably
 		uint8_t*			m_pLevel;			///< <c>0x88</c>: used to store the pointer to the level class
 		EntitySpawner*		m_pParentSpawner;	///< <c>0x90</c>: ptr to the parent spawner
