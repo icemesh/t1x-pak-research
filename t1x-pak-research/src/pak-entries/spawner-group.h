@@ -50,7 +50,10 @@ namespace EntitySpawnerGroup
 		uint8_t				m_unk2[0x18];		///< <c>0x58</c>: 
 		StringId64			m_processType;		///< <c>0x70</c>: StringId of the process type
 		const char*			m_artGroup;			///< <c>0x78</c>: art group name
-		uint32_t			m_spawnerFlags;		///< <c>0x80</c>: spawner flags
+		uint8_t				m_birthFlags;		///< <c>0x80</c>
+		uint8_t				m_autoSpawnOnce;		///< <c>0x81</c>
+		uint8_t				m_spawnerFlagsUnk1;		///< <c>0x82</c>
+		uint8_t				m_killRequested;		///< <c>0x83</c>
 		uint32_t			m_pad;				///< <c>0x84</c>: padding probably
 		uint8_t*			m_pLevel;			///< <c>0x88</c>: used to store the pointer to the level class
 		EntitySpawner*		m_pParentSpawner;	///< <c>0x90</c>: ptr to the parent spawner
