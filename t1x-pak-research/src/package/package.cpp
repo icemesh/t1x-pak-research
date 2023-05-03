@@ -290,7 +290,7 @@ bool Login(ResItem* pResItem, ResPage* pResPage, Package* pPackage)
 			break;
 		}
 
-		case 0x460F497540A29F73:
+		case SID("SPAWNER_GROUP"):
 		{
 			EntitySpawnerGroup::DumpInfo(reinterpret_cast<uint8_t*>(pResItem) + 0x30);
 			break;
